@@ -22,19 +22,21 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5382bc51-8eec-47ea-9d6f-12a5bd4d7cf8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/encodings.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/encodings.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+    <list default="true" id="5382bc51-8eec-47ea-9d6f-12a5bd4d7cf8" name="Default Changelist" comment="repo reset">
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/bootstrap.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/App.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/UserController.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/UserController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/max/springpractice/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/edu/max/springpractice/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/App.properties" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/home.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/App.properties" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/UserController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/templates/home.html" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/templates/home.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/createdFiles.lst" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" beforeDir="false" afterPath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/compile/default-compile/inputFiles.lst" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/createdFiles.lst" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/maven-status/maven-compiler-plugin/testCompile/default-testCompile/inputFiles.lst" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -79,22 +81,38 @@
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
     <property name="MANAGE_IGNORE_FILES_PROPERTY" value="true" />
+    <property name="RequestMappingsPanelOrder0" value="0" />
+    <property name="RequestMappingsPanelOrder1" value="1" />
+    <property name="RequestMappingsPanelWidth0" value="75" />
+    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="project.propVCSSupport.CommitDialog" />
+    <property name="settings.editor.selected.configurable" value="reference.settingsdialog.IDE.editor.colors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
       <recent name="H:\IdeaProjects\springpractice\src\main\resources" />
     </key>
   </component>
-  <component name="RunManager" selected="Maven.springpractice [jetty:run]">
-    <configuration name="springpractice [deploy:deploy]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+  <component name="RunManager" selected="Maven.springpractice [spring-boot:run]">
+    <configuration default="true" type="ArquillianJUnit" factoryName="" nameIsGenerated="true">
+      <option name="arquillianRunConfiguration">
+        <value>
+          <option name="containerStateName" value="" />
+        </value>
+      </option>
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="jetty run with jdwp argument" type="MavenRunConfiguration" factoryName="Maven" show_console_on_std_err="true" show_console_on_std_out="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
         <option name="myRunnerSettings" />
@@ -105,7 +123,8 @@
             </option>
             <option name="goals">
               <list>
-                <option value="deploy:deploy" />
+                <option value="jetty:run" />
+                <option value="-agentlib:jdwp=transport=dt_socket,server=y,suspend=n,address=8087" />
               </list>
             </option>
             <option name="pomFileName" value="pom.xml" />
@@ -144,31 +163,6 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
-    <configuration name="springpractice [jetty:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
-      <MavenSettings>
-        <option name="myGeneralSettings" />
-        <option name="myRunnerSettings" />
-        <option name="myRunnerParameters">
-          <MavenRunnerParameters>
-            <option name="profiles">
-              <set />
-            </option>
-            <option name="goals">
-              <list>
-                <option value="jetty:run" />
-              </list>
-            </option>
-            <option name="pomFileName" value="pom.xml" />
-            <option name="profilesMap">
-              <map />
-            </option>
-            <option name="resolveToWorkspace" value="false" />
-            <option name="workingDirPath" value="$PROJECT_DIR$" />
-          </MavenRunnerParameters>
-        </option>
-      </MavenSettings>
-      <method v="2" />
-    </configuration>
     <configuration name="springpractice [jetty:start]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
       <MavenSettings>
         <option name="myGeneralSettings" />
@@ -194,12 +188,77 @@
       </MavenSettings>
       <method v="2" />
     </configuration>
+    <configuration name="springpractice [spring-boot:run]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:run" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="springpractice [spring-boot:start]" type="MavenRunConfiguration" factoryName="Maven" temporary="true">
+      <MavenSettings>
+        <option name="myGeneralSettings" />
+        <option name="myRunnerSettings" />
+        <option name="myRunnerParameters">
+          <MavenRunnerParameters>
+            <option name="profiles">
+              <set />
+            </option>
+            <option name="goals">
+              <list>
+                <option value="spring-boot:start" />
+              </list>
+            </option>
+            <option name="pomFileName" value="pom.xml" />
+            <option name="profilesMap">
+              <map />
+            </option>
+            <option name="resolveToWorkspace" value="false" />
+            <option name="workingDirPath" value="$PROJECT_DIR$" />
+          </MavenRunnerParameters>
+        </option>
+      </MavenSettings>
+      <method v="2" />
+    </configuration>
+    <configuration name="App" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="springpractice" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="edu.max.springpractice.App" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <list>
+      <item itemvalue="Maven.jetty run with jdwp argument" />
+      <item itemvalue="Maven.springpractice [jetty:deploy-war]" />
+      <item itemvalue="Maven.springpractice [jetty:start]" />
+      <item itemvalue="Maven.springpractice [spring-boot:run]" />
+      <item itemvalue="Maven.springpractice [spring-boot:start]" />
+      <item itemvalue="Spring Boot.App" />
+    </list>
     <recent_temporary>
       <list>
-        <item itemvalue="Maven.springpractice [jetty:run]" />
+        <item itemvalue="Maven.springpractice [spring-boot:run]" />
+        <item itemvalue="Maven.springpractice [spring-boot:start]" />
         <item itemvalue="Maven.springpractice [jetty:start]" />
         <item itemvalue="Maven.springpractice [jetty:deploy-war]" />
-        <item itemvalue="Maven.springpractice [deploy:deploy]" />
       </list>
     </recent_temporary>
   </component>
@@ -215,7 +274,17 @@
       <option name="presentableId" value="Default" />
       <updated>1596972345508</updated>
       <workItem from="1597145648860" duration="1802000" />
+      <workItem from="1597147487486" duration="5877000" />
+      <workItem from="1597153392030" duration="2936000" />
     </task>
+    <task id="LOCAL-00001" summary="repo reset">
+      <created>1597147581983</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1597147581983</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,48 +300,102 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="repo reset" />
+    <option name="LAST_COMMIT_MESSAGE" value="repo reset" />
   </component>
   <component name="WindowStateProjectService">
     <state x="761" y="275" key="#Project_Structure" timestamp="1597145747426">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="761" y="275" key="#Project_Structure/0.0.2560.1400@0.0.2560.1400" timestamp="1597145747426" />
-    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1597147456474">
+    <state x="241" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1597155808958">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1597147456474">
+    <state x="241" y="249" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597155808958" />
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.0.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.0.center" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.0.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.0.left" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.0.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.0.right" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.0.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.1.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.1.center" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1597147456474">
+    <state width="2517" height="492" key="GridCell.Tab.1.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.1.left" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597147456474" />
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1597147017522">
+    <state width="2517" height="492" key="GridCell.Tab.1.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right" timestamp="1597156213229">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
-    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597147017522" />
+    <state width="2517" height="492" key="GridCell.Tab.1.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597156213229" />
+    <state width="2517" height="492" key="GridCell.Tab.2.bottom" timestamp="1597153372461">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.2.bottom/0.0.2560.1400@0.0.2560.1400" timestamp="1597153372461" />
+    <state width="2517" height="492" key="GridCell.Tab.2.center" timestamp="1597153372461">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.2.center/0.0.2560.1400@0.0.2560.1400" timestamp="1597153372461" />
+    <state width="2517" height="492" key="GridCell.Tab.2.left" timestamp="1597153372461">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.2.left/0.0.2560.1400@0.0.2560.1400" timestamp="1597153372461" />
+    <state width="2517" height="492" key="GridCell.Tab.2.right" timestamp="1597153372461">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2517" height="492" key="GridCell.Tab.2.right/0.0.2560.1400@0.0.2560.1400" timestamp="1597153372461" />
+    <state x="811" y="355" key="Maven.ArtifactSearchDialog" timestamp="1597150794360">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="811" y="355" key="Maven.ArtifactSearchDialog/0.0.2560.1400@0.0.2560.1400" timestamp="1597150794360" />
+    <state x="782" y="346" key="SettingsEditor" timestamp="1597148015332">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="782" y="346" key="SettingsEditor/0.0.2560.1400@0.0.2560.1400" timestamp="1597148015332" />
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup" timestamp="1597156060880">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="943" y="315" width="672" height="678" key="search.everywhere.popup/0.0.2560.1400@0.0.2560.1400" timestamp="1597156060880" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/max/springpractice/UserController.java</url>
+          <line>21</line>
+          <option name="timeStamp" value="5" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/max/springpractice/App.java</url>
+          <line>10</line>
+          <option name="timeStamp" value="6" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/edu/max/springpractice/UserController.java</url>
+          <line>18</line>
+          <option name="timeStamp" value="8" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
   </component>
   <component name="mavenExecuteGoalHistory">
     <option value="" />
